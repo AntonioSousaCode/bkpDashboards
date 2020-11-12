@@ -1,16 +1,19 @@
 # bkpDashboards
 
+## General info
 bkpDashboards is a DOS program that backups the configuration of Dynatrace dashboards into a directory structure in Windows.
 This might be useful for Windows users who lack access to a Linux machine.
 
+## Technologies
 For this to work, you need to have access to curl, jq & awk:
-    curl: Needed to make API calls to Dynatrace
+* curl: Needed to make API calls to Dynatrace
       https://curl.se/windows/
-    jq: Needed for JSON parsing
+* jq: Needed for JSON parsing
       https://stedolan.github.io/jq/
-    gawk: Generic parsing
+* gawk: Generic parsing
       http://gnuwin32.sourceforge.net/packages/gawk.htm
 
+## How it works
 There are two files. The first is bkpDashboards.bat, and this is all you need to configure and execute. What you need to know:
     You need to configure the API token for Dynatrace (and have the addequate permissions), and the host name of your environment
     It creates a durectory with the current date. You might have to check this in your system, as dates might be rendered different in your system. In mine, it creates a directory with name YYYYMMDD
