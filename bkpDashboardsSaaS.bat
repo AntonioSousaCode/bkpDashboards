@@ -1,5 +1,5 @@
-SET TOKEN=d387hdwejcihjweihd
-SET DTHOST=abc12345.live.dynatrace.com
+SET TOKEN=useYourOwnToken
+SET DTHOST=replaceWithYourHost.live.dynatrace.com
 
 FOR /F "TOKENS=1 eol=/ DELIMS=/ " %%A IN ('DATE/T') DO SET dd=%%A
 FOR /F "TOKENS=1,2 eol=/ DELIMS=/ " %%A IN ('DATE/T') DO SET mm=%%B
